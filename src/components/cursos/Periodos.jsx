@@ -112,6 +112,7 @@ const Periodos = () => {
 
   const handleConfirmDelete = () => {
     setSubfolders(subfolders.filter((sf) => sf !== editingFolder));
+    setDeleteModalOpen(false);
     closeModal();
   };
 
