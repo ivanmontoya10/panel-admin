@@ -17,7 +17,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <UserProvider>
-      <Router>
+      {/* <Router> */}
+      <Router basename="/panel-admin">
         <Routes>
           <Route path="/admin/login" exact element={<Login />} />
           <Route path="/admin/inicio" element={<ProtectedRoute element={<Plantilla />} />} />
